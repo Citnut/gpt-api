@@ -43,8 +43,6 @@ function api() {
             result.chatgpt = api_res.data.choices[0].text
             res.send(JSON.stringify(result, null, 2))
         }
-
-        res.header("Content-type", "application/json charset=utf-8")
     })
 }
 
